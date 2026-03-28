@@ -31,3 +31,8 @@ I'm passionate about building projects, designing thoughtful architecture, and d
   }
 
 ```
+-------------
+### Languages
+- Belarusian
+- English|B1
+- Russian
