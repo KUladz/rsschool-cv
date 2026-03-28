@@ -8,4 +8,13 @@
 - **GitHub**: *[KUladz](https://github.com/KUladz)*
 -------------
 ### Summary
-I'm passionate about building projects, designing thoughtful architecture, and developing logical structures. From the initial data request to the final rendering, I find the process exciting and strive for harmony and efficiency at every step.
+I'm passionate about building projects, designing thoughtful architecture, and developing logical structures. From the initial data request to the final rendering, I find the process exciting and strive for harmony and efficiency at every step
+
+-------------
+### Skills
+- HTML|CSS|SCSS
+- JS|TS
+- React|Angular
+- Git
+- Linux|Win
+-------------
