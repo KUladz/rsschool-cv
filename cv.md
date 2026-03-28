@@ -18,3 +18,16 @@ I'm passionate about building projects, designing thoughtful architecture, and d
 - Git
 - Linux|Win
 -------------
+
+### Code example
+```typescript
+  ngOnInit(): void {
+    this.store
+      .select(selectIsUserLogged)
+      .pipe(data => data)
+      .subscribe(res => (this.isUserLogged = res));
+
+    this.installTheme();
+  }
+
+```
