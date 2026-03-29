@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CV</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav-items">
+        <li class="nav-item">
+          <a class="nav-item--link" href="#summary">summary</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item--link" href="#code">code</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item--link" href="#contacts">contacts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item--link" href="#experience">experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item--link" href="#skills">skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item--link" href="#langs">langs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item--link" href="#education">education</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="about" id="about">
+      <div class="about-title">
+        <h1 class="about-title--name">uladzimir karnialiuk</h1>
+        <h2 class="about-title--prof">frontend developer</h2>
+      </div>
+      <div class="about-summary about-block">
+        <h2 class="about-block--title" id="summary">summary</h2>
+        <p class="about-text">I am passionate about building projects&#44; designing thoughtful architecture&#44; and
+          developing logical
+          structures. From the initial data request to the final rendering&#44; I find the process exciting and strive
+          for harmony and efficiency at every step</p>
+      </div>
+      <div class="about-experience about-block" id="experience">
+        <h2 class="about-block--title">experience</h2>
+        <p class="about-text">I specialized in developing and integrating website widgets to ensure seamless embedding
+          across various platforms. I designed and implemented a multi-step quiz form with dynamic questions&#44; which
+          significantly boosted visitor conversion rates into leads and contributed to increased sales. I also enabled
+          automatic form activation through URL query parameters&#44; delayed triggers after page load&#44; and
+          post-message
+          interactions&#44; resulting in improved conversion metrics across multiple websites. My experience includes
+          integrating widgets into CMS platforms such as WordPress and Joomla&#44; creating intuitive UI components&#44;
+          and
+          enhancing user experience. Additionally&#44; I contributed to process optimization and performed code
+          refactoring
+          to improve maintainability and performance.</p>
+      </div>
+      <div class="about-code about-block" id="code">
+        <h2 class="about-block--title">code</h2>
+        <pre><code>
+        ngOnInit(): void {
+          this.store
+            .select(selectIsUserLogged)
+            .pipe(data => data)
+            .subscribe(res => (this.isUserLogged = res));
+
+            this.installTheme();
+        }
+    </code></pre>
+      </div>
+      <div class="about-projects about-block">
+        <h2 class="about-block--title">projects</h2>
+        <ul>
+          <li class="project-item">
+            <a class="project-item--link link" href="https://kornull-final-angular.netlify.app/" target="_blank">RS
+              Network</a>
+            <p class="project-item--text">Final project for the RS Angular course</p>
+          </li>
+          <li class="project-item">
+            <a class="project-item--link link" href="https://kornull-angular.netlify.app/" target="_blank">YouTube
+              search app</a>
+            <p class="project-item--text">Angular RS course project</p>
+          </li>
+        </ul>
+      </div>
+      <div class="about-education about-block" id="education">
+        <h2 class="about-block--title">education</h2>
+        <p>RS School</p>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="info-photo">
+        <img class="photo" src="./assets/avatar.png" alt="photo">
+      </div>
+      <div class="info-contacts info-block" id="contacts">
+        <h2 class="info-block--title">contacts</h2>
+        <ul class="info-contacts--items">
+          <li class="contacts-item">
+            <img class="contacts-item--logo" src="./assets/location.png" alt="logo">
+            <p class="contacts-item--link">Brest&#44; Belarus</p>
+          </li>
+          <li class="contacts-item">
+            <img class="contacts-item--logo" src="./assets/telegram.png" alt="logo">
+            <a class="contacts-item--link link" href="https://t.me/karniul" target="_blank">Telegram</a>
+          </li>
+          <li class="contacts-item">
+            <img class="contacts-item--logo" src="./assets/phone.png" alt="logo">
+            <a class="contacts-item--link link" href="tel:+375259490283">+375259490283</a>
+          </li>
+          <li class="contacts-item">
+            <img class="contacts-item--logo" src="./assets/mail.png" alt="logo">
+            <a class="contacts-item--link link" href="mailto:karnialiuk.u@gmail.com">karnialiuk.u@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="info-skills info-block" id="skills">
+        <h2 class="info-block--title">skills</h2>
+        <div class="skills">
+          <ul class="info-skills--items">
+            <li class="skills-item">
+              <p class="skills-item--text">HTML</p>
+            </li>
+            <li class="skills-item">
+              <p class="skills-item--text">CSS&#x2f;SCSS</p>
+            </li>
+            <li class="skills-item">
+              <p class="skills-item--text">Js&#x2f;Ts</p>
+            </li>
+            <li class="skills-item">
+              <p class="skills-item--text">Angular</p>
+            </li>
+          </ul>
+          <ul class="info-skills--items">
+            <li class="skills-item">
+              <p class="skills-item--text">RxJS</p>
+            </li>
+            <li class="skills-item">
+              <p class="skills-item--text">NGRX</p>
+            </li>
+            <li class="skills-item">
+              <p class="skills-item--text">Redux</p>
+            </li>
+            <li class="skills-item">
+              <p class="skills-item--text">React</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="info-langs info-block" id="langs">
+        <h2 class="info-block--title">langs</h2>
+        <ul class="info-langs--items">
+          <li class="langs-item">Belarusian</li>
+          <li class="langs-item">English &#8722; B1</li>
+          <li class="langs-item">Russian</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <ul class="footer-items">
+        <li class="footer-item"><a class="footer-link link" href="https://github.com/KUladz" target="_blank">GitHub</a>
+        </li>
+        <li class="footer-item">
+          <p>&copy; 2026</p>
+        </li>
+        <li class="footer-item logo">
+          <a class="logo-link" href="https://rs.school/courses/javascript" target="_blank">
+            <img class="logo" src="./assets/rs-school-logo.svg" alt="rs-logo">
+          </a>
+        </li>
+    </ul>
+    </div>
+  </footer>
+</body>
+</html>
