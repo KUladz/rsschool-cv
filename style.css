@@ -5,8 +5,13 @@
 }
 
 body {
-  font-size: 16px;
+  font-size: 18px;
 }
+
+h2 {
+  text-transform: capitalize;
+}
+
 ul,
 ol,
 li {
@@ -34,7 +39,6 @@ li {
   display: flex;
   align-items: start;
   margin: 0px auto;
-  border: 1px solid red;
   width: 100%;
   max-width: 1024px;
   height: auto;
@@ -45,19 +49,63 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
-  border: 1px solid green;
+  height: -webkit-fill-available;
+  padding: 10px 20px;
 }
 
 .about {
   width: 70%;
+  padding: 40px 20px 10px;
+  background: #f5f5f5;
+}
+
+.link {
+  width: 100%;
+  text-align: start;
+  text-decoration: none;
+}
+
+.info {
+  width: 30%;
+  background: #343434;
+  color: #fff;
+}
+
+.about-block--title,
+.info-block--title {
+  position: relative;
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.about-block--title::after,
+.info-block--title::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+}
+
+.about-block--title::after {
+  background: #131313;
+}
+
+.info-block--title::after {
+  background: #ffff00;
+}
+
+.about-block,
+.info-block {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .about-title {
-  padding: 20px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 40px;
 }
 
 .about-title--name,
@@ -66,18 +114,9 @@ li {
   text-align: end;
 }
 
-.info {
-  width: 30%;
-  padding: 10px 20px;
-  background: #343434;
-  color: #fff;
-  font-size: 18px;
-}
-.info-contacts,
-.info-skills,
-.info-langs {
-  width: 100%;
-  margin-bottom: 14px;
+.about-text {
+  color: #0c0c0c;
+  text-indent: 1.2em;
 }
 
 .info-contacts--items {
@@ -87,12 +126,19 @@ li {
   width: 100%;
 }
 
-.contacts-item {
+.contacts-item,
+.project-item {
   display: flex;
   align-items: center;
   gap: 30px;
   width: 100%;
   padding-bottom: 10px;
+}
+
+.project-item--link {
+  color: #0a3701;
+  font-weight: bold;
+  width: 220px;
 }
 
 .contacts-item--logo {
@@ -101,17 +147,21 @@ li {
 }
 
 .contacts-item--link {
-  width: 100%;
-  max-width: 120px;
-  text-align: start;
-  text-decoration: none;
   color: #fff;
 }
 
-.contacts-item--link:hover {
+.contacts-item--link:hover,
+.project-item--link:hover {
   text-decoration: underline;
-  color: #ffff00;
   transition: color 0.4s ease-in-out;
+}
+
+.contacts-item--link:hover {
+  color: #ffff00;
+}
+
+.project-item--link:hover {
+  color: #ff3c00;
 }
 
 .info-skills--items,
@@ -128,21 +178,6 @@ li {
   gap: 30px;
 }
 
-.info-block--title {
-  position: relative;
-  font-size: 26px;
-  margin-bottom: 20px;
-}
-
-.info-block--title::after {
-  content: "";
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: #ffff00;
-}
 .footer {
   width: 100%;
   height: 60px;
