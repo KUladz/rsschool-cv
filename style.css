@@ -9,6 +9,9 @@ html {
 }
 
 body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   font-size: 22px;
   padding: 24px;
 }
@@ -32,6 +35,7 @@ code {
   align-items: center;
   justify-content: center;
   width: 100%;
+  max-width: 1024px;
   height: 60px;
 }
 
@@ -60,8 +64,9 @@ code {
   transition: color 0.2s ease-in;
   text-transform: capitalize;
 }
+
 .nav-item--link:hover {
-  color: #ff3c00;
+  color: #d22300;
 }
 
 .main {
@@ -71,6 +76,9 @@ code {
   width: 100%;
   max-width: 1024px;
   height: auto;
+  box-shadow:
+    inset -5px 0 5px -3px rgb(0, 0, 0),
+    inset 5px 0 5px -3px rgb(0, 0, 0);
 }
 
 .about,
@@ -166,6 +174,10 @@ code {
   text-indent: 1.2em;
 }
 
+.about-education {
+  margin: 0;
+}
+
 .info-contacts--items {
   display: flex;
   flex-direction: column;
@@ -208,7 +220,7 @@ code {
 }
 
 .project-item--link:hover {
-  color: #ff3c00;
+  color: #d22300;
 }
 
 .info-skills--items,
@@ -226,7 +238,44 @@ code {
 }
 
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+  max-width: 1024px;
   height: 60px;
-  background: #b1feff4d;
+  overflow: hidden;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1024px;
+  height: inherit;
+  background: #00000029;
+  padding: 0 26px;
+}
+
+.footer-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-link {
+  color: #0a3701;
+}
+
+.footer-link:hover {
+  color: #d22300;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  max-height: 260px;
+  overflow: hidden;
 }
