@@ -69,29 +69,65 @@ li {
 .info {
   width: 30%;
   padding: 10px 20px;
+  background: #343434;
+  color: #fff;
+  font-size: 18px;
 }
 .info-contacts {
   width: 100%;
 }
 
-.info-contacts--items{
-    width: 100%;
+.info-contacts--items {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
 }
 
-.contacts-item{
-    display: flex;
-    align-items:flex-start;
-    justify-content: space-between;
-    width: 100%;
+.contacts-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.contacts-item--logo {
+  width: 30px;
+  height: 30px;
 }
 
 .contacts-item--link {
-    width: 100%;
-    max-width: 120px;
+  width: 100%;
+  max-width: 120px;
+  text-align: start;
+  text-decoration: none;
+  color: #fff;
+}
+
+.contacts-item--link:hover{
+  text-decoration: underline;
+  color: yellow;
+  transition: color .4s ease-in-out;
+}
+
+.block-title{
+  position: relative;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.block-title::after{
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background:yellow;
 }
 .footer {
   width: 100%;
   height: 60px;
   background: #b1feff4d;
 }
-
